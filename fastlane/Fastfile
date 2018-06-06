@@ -22,12 +22,23 @@ lane :beta do
   build_app(scheme: “FastlaneProject”)
 end
 
-lane :match_gg do
+lane :match_readonly do
   match(
   type: "development", 
  )
    match(
-  type: "appstore", 
+  type: "adhoc", 
+ ) 
+end
+
+lane :match_force do
+  match(
+  type: "development",
+  force: true 
+ )
+   match(
+  type: "adhoc", 
+  force: true
  ) 
 end
 

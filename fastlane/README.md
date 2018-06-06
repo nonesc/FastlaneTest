@@ -20,9 +20,14 @@ or alternatively using `brew cask install fastlane`
 fastlane beta
 ```
 
-### match_gg
+### match_readonly
 ```
-fastlane match_gg
+fastlane match_readonly
+```
+
+### match_force
+```
+fastlane match_force
 ```
 
 ### build_hockey
